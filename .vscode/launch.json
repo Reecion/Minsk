@@ -12,7 +12,7 @@
             "program": "${workspaceFolder}/mc/bin/Debug/net7.0/mc.dll",
             "args": [],
             "cwd": "${workspaceFolder}/mc",
-            "console": "externalTerminal",
+            "console": "integratedTerminal",
             "stopAtEntry": false
         },
         {

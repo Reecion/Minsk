@@ -1,0 +1,15 @@
+/workspaces/Minsk/mc/bin/Debug/net7.0/mc
+/workspaces/Minsk/mc/bin/Debug/net7.0/mc.deps.json
+/workspaces/Minsk/mc/bin/Debug/net7.0/mc.runtimeconfig.json
+/workspaces/Minsk/mc/bin/Debug/net7.0/mc.dll
+/workspaces/Minsk/mc/bin/Debug/net7.0/mc.pdb
+/workspaces/Minsk/mc/obj/Debug/net7.0/mc.csproj.AssemblyReference.cache
+/workspaces/Minsk/mc/obj/Debug/net7.0/mc.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Minsk/mc/obj/Debug/net7.0/mc.AssemblyInfoInputs.cache
+/workspaces/Minsk/mc/obj/Debug/net7.0/mc.AssemblyInfo.cs
+/workspaces/Minsk/mc/obj/Debug/net7.0/mc.csproj.CoreCompileInputs.cache
+/workspaces/Minsk/mc/obj/Debug/net7.0/mc.dll
+/workspaces/Minsk/mc/obj/Debug/net7.0/refint/mc.dll
+/workspaces/Minsk/mc/obj/Debug/net7.0/mc.pdb
+/workspaces/Minsk/mc/obj/Debug/net7.0/mc.genruntimeconfig.cache
+/workspaces/Minsk/mc/obj/Debug/net7.0/ref/mc.dll

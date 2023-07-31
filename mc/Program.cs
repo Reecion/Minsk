@@ -13,6 +13,7 @@ namespace Minsk
             bool showTree = false;
             while(true)
             {
+                Console.Clear();
                 Console.Write("> ");
                 var line = Console.ReadLine();
                 if(string.IsNullOrWhiteSpace(line))
@@ -30,7 +31,6 @@ namespace Minsk
                 }
                 else if (line == "#exit")
                 {
-                    Console.Clear();
                     break;
                 }
                 

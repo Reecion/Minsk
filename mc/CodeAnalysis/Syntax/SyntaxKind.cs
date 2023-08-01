@@ -13,6 +13,11 @@ namespace Minsk.CodeAnalysis.Syntax
         SlashToken,
         OpenParethesisToken,
         CloseParenthesisToken,
+        IdentifierToken,
+
+        // Keywords
+        TrueKeyword,
+        FalseKeyword,
 
         // Expressions
         LiteralExpression,

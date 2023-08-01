@@ -1,0 +1,4 @@
+{
+    "editor.suggest.showReferences": true,
+    "csharp.referencesCodeLens.enabled": false
+}

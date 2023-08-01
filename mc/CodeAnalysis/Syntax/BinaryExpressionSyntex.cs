@@ -1,8 +1,8 @@
-namespace Minsk.CodeAnalysis
+namespace Minsk.CodeAnalysis.Syntax
 {
-    sealed class BinaryExpressionSyntex : ExpressionSyntax
+    public sealed class BinaryExpressionSyntax : ExpressionSyntax
     {
-        public BinaryExpressionSyntex(ExpressionSyntax left, SyntaxToken operatorToken, ExpressionSyntax right)
+        public BinaryExpressionSyntax(ExpressionSyntax left, SyntaxToken operatorToken, ExpressionSyntax right)
         {
             Left = left;
             OperatorToken = operatorToken;

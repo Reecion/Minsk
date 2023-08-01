@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 
+using Minsk.CodeAnalysis.Syntax;
+using Minsk.CodeAnalysis.Binding;
 using Minsk.CodeAnalysis;
 
 namespace Minsk
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            bool showTree = false;
+            var showTree = false;
+            Console.Clear();
+            
             while(true)
             {
-                Console.Clear();
                 Console.Write("> ");
                 var line = Console.ReadLine();
                 if(string.IsNullOrWhiteSpace(line))
@@ -34,33 +37,34 @@ namespace Minsk
                     break;
                 }
                 
-                var parser = new Parser(line);
                 var syntaxTree = SyntaxTree.Parse(line);
+                var binder = new Binder();
+                var boundExpression = binder.BindExpression(syntaxTree.Root);
+
+                var diagnostics = syntaxTree.Diagnostics.Concat(binder.Diagnostics).ToArray();
 
                 if (showTree)
                 {
-                    var color = Console.ForegroundColor;
                     Console.ForegroundColor = ConsoleColor.DarkGray;
                     PrettyPrint(syntaxTree.Root);
-                    Console.ForegroundColor = color;
+                    Console.ResetColor();
                 }
-                
 
-                if (!syntaxTree.Diagnostics.Any())
+
+                if (!diagnostics.Any())
                 {
-                    var e = new Evaluator(syntaxTree.Root);
+                    var e = new Evaluator(boundExpression);
                     var result = e.Evaluate();
                     Console.WriteLine(result);
                 }
                 else
                 {   
-                    var color = Console.ForegroundColor;
                     Console.ForegroundColor = ConsoleColor.DarkRed;
 
-                    foreach (var diagnostics in syntaxTree.Diagnostics)
-                        Console.WriteLine(diagnostics);
+                    foreach (var diagnostic in diagnostics)
+                        Console.WriteLine(diagnostic);
 
-                    Console.ForegroundColor = color;
+                    Console.ResetColor();
                 }
             }
         }
@@ -82,7 +86,7 @@ namespace Minsk
 
             Console.WriteLine();
 
-            indent += isLast ? "    " : "│  ";
+            indent += isLast ? "   " : "│  ";
 
             var lastChild = node.GetChildren().LastOrDefault();
 

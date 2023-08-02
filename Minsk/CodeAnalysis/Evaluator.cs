@@ -4,6 +4,34 @@ using Minsk.CodeAnalysis.Binding;
 
 namespace Minsk.CodeAnalysis
 {
+    public class Compilation
+    {
+        public Compilation(SyntaxTree syntax)
+        {
+            Syntax = syntax;
+        }
+
+        public SyntaxTree Syntax { get; }
+
+        public EvaluationResult Evaluate()
+        {
+            var binder = new Binder();
+            var boundExpression = binder.BindExpression(Syntax.Root);
+        }
+    }
+
+    public sealed class EvaluationResult
+    {
+        public EvaluationResult(IEnumerable<string> diagnostics, object value)
+        {
+            Diagnostics = diagnostics.ToArray();
+            Value = value;
+        }
+
+        public IReadOnlyList<string> Diagnostics { get; }
+        public object Value { get; }
+    }
+
 
     internal sealed class Evaluator
     {

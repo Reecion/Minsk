@@ -13,3 +13,6 @@
 /workspaces/Minsk/mc/obj/Debug/net7.0/mc.pdb
 /workspaces/Minsk/mc/obj/Debug/net7.0/mc.genruntimeconfig.cache
 /workspaces/Minsk/mc/obj/Debug/net7.0/ref/mc.dll
+/workspaces/Minsk/mc/bin/Debug/net7.0/Minsk.dll
+/workspaces/Minsk/mc/bin/Debug/net7.0/Minsk.pdb
+/workspaces/Minsk/mc/obj/Debug/net7.0/mc.csproj.CopyComplete

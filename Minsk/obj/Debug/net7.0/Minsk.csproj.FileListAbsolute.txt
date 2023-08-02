@@ -1,0 +1,12 @@
+/workspaces/Minsk/Minsk/bin/Debug/net7.0/Minsk.deps.json
+/workspaces/Minsk/Minsk/bin/Debug/net7.0/Minsk.dll
+/workspaces/Minsk/Minsk/bin/Debug/net7.0/Minsk.pdb
+/workspaces/Minsk/Minsk/obj/Debug/net7.0/Minsk.csproj.AssemblyReference.cache
+/workspaces/Minsk/Minsk/obj/Debug/net7.0/Minsk.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Minsk/Minsk/obj/Debug/net7.0/Minsk.AssemblyInfoInputs.cache
+/workspaces/Minsk/Minsk/obj/Debug/net7.0/Minsk.AssemblyInfo.cs
+/workspaces/Minsk/Minsk/obj/Debug/net7.0/Minsk.csproj.CoreCompileInputs.cache
+/workspaces/Minsk/Minsk/obj/Debug/net7.0/Minsk.dll
+/workspaces/Minsk/Minsk/obj/Debug/net7.0/refint/Minsk.dll
+/workspaces/Minsk/Minsk/obj/Debug/net7.0/Minsk.pdb
+/workspaces/Minsk/Minsk/obj/Debug/net7.0/ref/Minsk.dll

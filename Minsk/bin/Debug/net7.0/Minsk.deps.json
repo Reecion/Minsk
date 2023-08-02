@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "mc/1.0.0": {
-        "dependencies": {
-          "Minsk": "1.0.0"
-        },
-        "runtime": {
-          "mc.dll": {}
-        }
-      },
       "Minsk/1.0.0": {
         "runtime": {
           "Minsk.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "mc/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Minsk/1.0.0": {
       "type": "project",
       "serviceable": false,
